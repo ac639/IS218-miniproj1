@@ -50,7 +50,10 @@
     <div class="row">
       <div class="col-lg-12 text-center">
         <h1 class="mt-5">PHP CSV</h1>
+          <button type="button" name="load_data" id="load_data" class="btn btn-dark">Load CSV</button>
+          <div id="csvtable">
 
+          </div>
       </div>
     </div>
 
