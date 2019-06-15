@@ -72,7 +72,15 @@
 
 <script>
     $(document).ready(function() {
+        $('#load_data').click(function() {
+            $.ajax({
+                url:"sample.csv",
+                dataType:"text",
+                success:function(data) {
 
+  
+
+        });
 
     });
 
