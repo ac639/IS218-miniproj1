@@ -77,9 +77,9 @@
                 url:"sample.csv",
                 dataType:"text",
                 success:function(data) {
-
-  
-
+                    
+                });
+            });
         });
 
     });
