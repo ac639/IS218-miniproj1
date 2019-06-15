@@ -11,8 +11,8 @@
   <title>Bootstrap PHP CSV</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    
+  <link href="themes/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
 
 </head>
 
