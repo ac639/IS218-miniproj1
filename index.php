@@ -77,9 +77,26 @@
                 url:"sample.csv",
                 dataType:"text",
                 success:function(data) {
-                    
-                });
+
+                    var csv = data.split(/\r?\n|\r/);
+                    var mktable = '<table class="table table-striped">';
+                    for (var i = 0; i < csv.length; i++) {
+                        var csvrow = csv[i].split(",");
+                        mktable += '<tr>';
+                        for (var j = 0; j < csvrow.length; j++ ) {
+                            if (i === 0) {
+                                mktable += '<th>' + csvrow[j] + '</th>';
+                            } else {
+                                mktable += '<td>' + csvrow[j] + '</td>';
+                            }
+                        }
+                        mktable += '</tr>';
+                    }
+                    mktable += '</table>';
+                    $('#csvtable').html(mktable);
+                }
             });
+
         });
 
     });
